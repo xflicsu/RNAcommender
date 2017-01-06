@@ -36,6 +36,8 @@ Protein features (training)
 ```bash
 python rbpfeatures.py ../examples/rbps_HT.fa ../examples/rbps_HT.fa ../examples/rbps_HT.h5 --all-sel
 ```
+@@@ this step need connect to the website of pfam or other outside website. So, keep you HPC online!!!!
+
 rbps_HT.h5 is the output file that will store the features, the flag ```--all-sel``` forces the inclusion of all the selected sequences in the output. In this case if a train protein has no similarity with the other proteins we still want it to use it (this protein will be represented by its one-hot encoding).
 
 RNA features
